@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Webfonts -->
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/animate.css') }}">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/icomoon.css') }}">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/simple-line-icons.css') }}">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+    <!-- Modernizr JS -->
+    <script src="{{ url_for('static', path='/js/modernizr-2.6.2.min.js') }}"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+	<script src="{{ url_for('static', path='/js/respond.min.js') }}"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+    <div id="fh5co-main">
+        <div id="fh5co-portfolio">
+            <div class="fh5co-portfolio-item">
+                <div class="fh5co-portfolio-figure animate-box">
+                    <img id="show_image" style="width: 100%; height: 100%" src="{{ url_for('static', path='/images/default.jpg') }}">
+                </div>
+                <div class="fh5co-portfolio-description">
+                    <p id="sentence">{{ sentence }}</p>
+                    <p style="text-align: center;"> <input id="secret_input" placeholder="请输入暗号"></input></p>
+                    <p style="text-align: center;"><button href="#" class="btn btn-primary" id="generation_button">再换一张</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="{{ url_for('static', path='/js/jquery.min.js') }}"></script>
+    <!-- jQuery Easing -->
+    <script src="{{ url_for('static', path='/js/jquery.easing.1.3.js') }}"></script>
+    <!-- Bootstrap -->
+    <script src="{{ url_for('static', path='/js/bootstrap.min.js') }}"></script>
+    <!-- Waypoints -->
+    <script src="{{ url_for('static', path='/js/jquery.waypoints.min.js') }}"></script>
+    <!-- Main JS -->
+    <script src="{{ url_for('static', path='/js/main.js') }}"></script>
+    <!-- Acquire JS -->
+    <script src="{{ url_for('static', path='/js/acquire.js') }}"></script>
+
+</body>
+
+</html>
